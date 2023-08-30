@@ -5,7 +5,9 @@
   </header>
 
   <% if enhanced_cart.empty? %>
-    <p>Your cart is currently empty. <%= link_to 'Return to Homepage', root_path %></p>
+    <div class="alert alert-warning">
+      Your cart is currently empty. <%= link_to 'Return to Homepage', root_path %>
+      </div>
   <% else %>
     <div class="panel panel-default items">
       <table class="table table-bordered">
