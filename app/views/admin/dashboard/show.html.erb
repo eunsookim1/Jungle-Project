@@ -1,2 +1,9 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<header class="page-header">
+    <h1>Admin &raquo; Dashboard</h1>
+  </header>
+<div class="d-block p-2 bg-success text-white border border-white border-2">Number of Products: <%= @product_count %></div>
+<div class="d-block p-2 bg-success text-white border border-white border-2">Number of Categories: <%= @category_count %></div>
+<br>
+<div>
+  <%= link_to "View Products", admin_products_path %>
+</div>
