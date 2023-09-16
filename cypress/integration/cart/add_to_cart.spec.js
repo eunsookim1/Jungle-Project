@@ -24,7 +24,6 @@ describe('Jungle-Project can add to cart', () => {
 
     cy.get('.nav-link')
       .contains('My Cart (1)');
-    // .should('have.text', 'My Cart (1)').click();
   })
 
 });
